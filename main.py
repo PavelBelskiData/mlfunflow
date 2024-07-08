@@ -1,6 +1,6 @@
 from sklearn.model_selection import train_test_split
 # from modules import algorithms, fitters, models
-import modules.algorithms
+from modules.algorithms import ElasticNetAlgorithmGenerator
 
 
 bronze_housing_table = 'ml_project_1.default.bronze_housing'
@@ -17,6 +17,8 @@ X_train, X_rem, y_train, y_rem = train_test_split(X, y, train_size=0.6, random_s
 X_val, X_test, y_val, y_test = train_test_split(X_rem, y_rem, train_size=0.5, random_state=8)
 
 
-methodGenerator = modules.algorithms.AlgorithmGenerator()
+methodGenerator = ElasticNetAlgorithmGenerator()
+
+print('ok')
 
 lr = methodGenerator.getAlgorithm()
