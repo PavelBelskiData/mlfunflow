@@ -17,11 +17,13 @@ def main(args):
     # Your code here
     # Example: print a greeting message
     print(f"Hello, {args.name}!")
+    print(f"Hello, {args.xxx}!")
 
 if __name__ == "__main__":
     # Argument parsing
     parser = argparse.ArgumentParser(description="Description of your script.")
     parser.add_argument('-n', '--name', type=str, default="World", help='Name to greet')
+    parser.add_argument('-x', '--xxx', type=str, default="XXX")
     
     args = parser.parse_args()
     
