@@ -1,6 +1,5 @@
 from sklearn.model_selection import train_test_split
 from modules import algorithms, fitters, models
-from modules.algorithms import ElasticNetAlgorithmGenerator
 
 
 
@@ -17,6 +16,8 @@ y= housing_pdf.median_house_value
 X_train, X_rem, y_train, y_rem = train_test_split(X, y, train_size=0.6, random_state=8)
 X_val, X_test, y_val, y_test = train_test_split(X_rem, y_rem, train_size=0.5, random_state=8)
 
-methodGenerator = ElasticNetAlgorithmGenerator()
+print(algorithms)
+
+methodGenerator = algorithms.ElasticNetAlgorithmGenerator()
 
 lr = methodGenerator.getAlgorithm()
