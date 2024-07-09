@@ -1,2 +1,2 @@
-from .AlgorithmGenerator import AlgorithmGenerator
-from .ElasticNetAlgorithmGenerator import ElasticNetAlgorithmGenerator
+from . import AlgorithmGenerator
+from . import ElasticNetAlgorithmGenerator

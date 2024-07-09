@@ -1,6 +1,6 @@
 from sklearn.model_selection import train_test_split
 # from modules import algorithms, fitters, models
-from modules.algorithms import ElasticNetAlgorithmGenerator
+from modules.algorithms.ElasticNetAlgorithmGenerator import ElasticNetAlgorithmGenerator
 
 
 bronze_housing_table = 'ml_project_1.default.bronze_housing'
