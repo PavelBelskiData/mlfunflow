@@ -1,3 +1,5 @@
+from modules.models.ModelWrapper import ModelWrapper
+
 class ElasticNetModelWrapper(ModelWrapper):
     def __init__(self, model):
         super().__init__(model)
